@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<ul>
+	<li *ngFor="let x of dataTagListSorted;let i = index;">
+		<span>{{x}}</span>
+	</li>
+</ul>
+
+<button (click)="insertStart()">CLICK</button>
